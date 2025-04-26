@@ -8,7 +8,7 @@ user_2 = User(username='Schafer', email='test1@mail.com', password='password')
 with app.app_context():
 
     # Create Database file
-    db.create_all()
+    # db.create_all()
     
     # Add User to the Database
     # db.session.add(user_1)
@@ -29,7 +29,7 @@ with app.app_context():
     # print(usr.id, usr.email)
 
     
-    # usr = db.session.get(User, 1)
+    usr = db.session.get(User, 1)
     
     # Access user using unique id
     # print(usr)
